@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 3) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CoursePlay</td>
+              <td>3</td>
+            <td>23 May 2019, 18:33</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Added_Successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="5109409849">5.109</td>
+              <td class="duration" data-value="5109409849">5.109</td>
+              <td class="duration" data-value="5109409849">5.109</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Added_the_Question_and_click_Answer_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="4521966968">4.521</td>
+              <td class="duration" data-value="4521966968">4.521</td>
+              <td class="duration" data-value="4521966968">4.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Agree_and_Start()</td>
+              <td>1</td>
+              <td class="duration" data-value="5582425589">5.582</td>
+              <td class="duration" data-value="5582425589">5.582</td>
+              <td class="duration" data-value="5582425589">5.582</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Enter_the_Basic_Details()</td>
+              <td>1</td>
+              <td class="duration" data-value="2999991629">2.999</td>
+              <td class="duration" data-value="2999991629">2.999</td>
+              <td class="duration" data-value="2999991629">2.999</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Go_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3103790649">3.103</td>
+              <td class="duration" data-value="3103790649">3.103</td>
+              <td class="duration" data-value="3103790649">3.103</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Login_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5118821600">5.118</td>
+              <td class="duration" data-value="5118821600">5.118</td>
+              <td class="duration" data-value="5118821600">5.118</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Save_and_Publish()</td>
+              <td>1</td>
+              <td class="duration" data-value="3079559108">3.079</td>
+              <td class="duration" data-value="3079559108">3.079</td>
+              <td class="duration" data-value="3079559108">3.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Save_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="6862446591">6.862</td>
+              <td class="duration" data-value="6862446591">6.862</td>
+              <td class="duration" data-value="6862446591">6.862</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Scorm_Module()</td>
+              <td>1</td>
+              <td class="duration" data-value="5887767425">5.887</td>
+              <td class="duration" data-value="5887767425">5.887</td>
+              <td class="duration" data-value="5887767425">5.887</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_Upload_SCROM_and_Upload()</td>
+              <td>1</td>
+              <td class="duration" data-value="5223477444">5.223</td>
+              <td class="duration" data-value="5223477444">5.223</td>
+              <td class="duration" data-value="5223477444">5.223</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_and_enter_details_in_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="3233437456">3.233</td>
+              <td class="duration" data-value="3233437456">3.233</td>
+              <td class="duration" data-value="3233437456">3.233</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_back_to_User_Module()</td>
+              <td>1</td>
+              <td class="duration" data-value="4053894328">4.053</td>
+              <td class="duration" data-value="4053894328">4.053</td>
+              <td class="duration" data-value="4053894328">4.053</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_back_to_User_window()</td>
+              <td>1</td>
+              <td class="duration" data-value="7179530573">7.179</td>
+              <td class="duration" data-value="7179530573">7.179</td>
+              <td class="duration" data-value="7179530573">7.179</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_Announcement()</td>
+              <td>1</td>
+              <td class="duration" data-value="3104213735">3.104</td>
+              <td class="duration" data-value="3104213735">3.104</td>
+              <td class="duration" data-value="3104213735">3.104</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_Create_Course()</td>
+              <td>1</td>
+              <td class="duration" data-value="8158034250">8.158</td>
+              <td class="duration" data-value="8158034250">8.158</td>
+              <td class="duration" data-value="8158034250">8.158</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_Discussion_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="4046953746">4.046</td>
+              <td class="duration" data-value="4046953746">4.046</td>
+              <td class="duration" data-value="4046953746">4.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_Logout_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1520609441">1.520</td>
+              <td class="duration" data-value="1520609441">1.520</td>
+              <td class="duration" data-value="1520609441">1.520</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Action_Button_in_User()</td>
+              <td>1</td>
+              <td class="duration" data-value="4210221777">4.210</td>
+              <td class="duration" data-value="4210221777">4.210</td>
+              <td class="duration" data-value="4210221777">4.210</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Action_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5121694930">5.121</td>
+              <td class="duration" data-value="5121694930">5.121</td>
+              <td class="duration" data-value="5121694930">5.121</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Add_Discussion_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3932816905">3.932</td>
+              <td class="duration" data-value="3932816905">3.932</td>
+              <td class="duration" data-value="3932816905">3.932</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Announcement()</td>
+              <td>1</td>
+              <td class="duration" data-value="3104843417">3.104</td>
+              <td class="duration" data-value="3104843417">3.104</td>
+              <td class="duration" data-value="3104843417">3.104</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Assessment()</td>
+              <td>1</td>
+              <td class="duration" data-value="4044980615">4.044</td>
+              <td class="duration" data-value="4044980615">4.044</td>
+              <td class="duration" data-value="4044980615">4.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Course()</td>
+              <td>1</td>
+              <td class="duration" data-value="4207965574">4.207</td>
+              <td class="duration" data-value="4207965574">4.207</td>
+              <td class="duration" data-value="4207965574">4.207</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Create_User_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1093857269">1.093</td>
+              <td class="duration" data-value="1093857269">1.093</td>
+              <td class="duration" data-value="1093857269">1.093</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Create_User_button_in_User()</td>
+              <td>1</td>
+              <td class="duration" data-value="1059457217">1.059</td>
+              <td class="duration" data-value="1059457217">1.059</td>
+              <td class="duration" data-value="1059457217">1.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Discussion_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3082626859">3.082</td>
+              <td class="duration" data-value="3082626859">3.082</td>
+              <td class="duration" data-value="3082626859">3.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Module()</td>
+              <td>1</td>
+              <td class="duration" data-value="3118547660">3.118</td>
+              <td class="duration" data-value="3118547660">3.118</td>
+              <td class="duration" data-value="3118547660">3.118</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Module_Authoring()</td>
+              <td>1</td>
+              <td class="duration" data-value="1213144569">1.213</td>
+              <td class="duration" data-value="1213144569">1.213</td>
+              <td class="duration" data-value="1213144569">1.213</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_Scorm_Module()</td>
+              <td>1</td>
+              <td class="duration" data-value="3106289973">3.106</td>
+              <td class="duration" data-value="3106289973">3.106</td>
+              <td class="duration" data-value="3106289973">3.106</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_User_profile()</td>
+              <td>1</td>
+              <td class="duration" data-value="98864289">0.098</td>
+              <td class="duration" data-value="98864289">0.098</td>
+              <td class="duration" data-value="98864289">0.098</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_popup()</td>
+              <td>1</td>
+              <td class="duration" data-value="15245919">0.015</td>
+              <td class="duration" data-value="15245919">0.015</td>
+              <td class="duration" data-value="15245919">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_on_the_users()</td>
+              <td>1</td>
+              <td class="duration" data-value="3086991641">3.086</td>
+              <td class="duration" data-value="3086991641">3.086</td>
+              <td class="duration" data-value="3086991641">3.086</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_save_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="11018492872">11.018</td>
+              <td class="duration" data-value="11018492872">11.018</td>
+              <td class="duration" data-value="11018492872">11.018</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Click_save_button_in_create_user()</td>
+              <td>1</td>
+              <td class="duration" data-value="4223636101">4.223</td>
+              <td class="duration" data-value="4223636101">4.223</td>
+              <td class="duration" data-value="4223636101">4.223</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Announcement_Title_and_Short_Description()</td>
+              <td>1</td>
+              <td class="duration" data-value="6792670575">6.792</td>
+              <td class="duration" data-value="6792670575">6.792</td>
+              <td class="duration" data-value="6792670575">6.792</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Expiration_Date_in_Advance_settings()</td>
+              <td>1</td>
+              <td class="duration" data-value="283579562">0.283</td>
+              <td class="duration" data-value="283579562">0.283</td>
+              <td class="duration" data-value="283579562">0.283</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Maximum_Number_of_Attempts_in_Advance_Settings()</td>
+              <td>1</td>
+              <td class="duration" data-value="252774977">0.252</td>
+              <td class="duration" data-value="252774977">0.252</td>
+              <td class="duration" data-value="252774977">0.252</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Maximum_User_Enrollments_in_Advance_settings()</td>
+              <td>1</td>
+              <td class="duration" data-value="233112913">0.233</td>
+              <td class="duration" data-value="233112913">0.233</td>
+              <td class="duration" data-value="233112913">0.233</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Module_Code_in_basic_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="3281370538">3.281</td>
+              <td class="duration" data-value="3281370538">3.281</td>
+              <td class="duration" data-value="3281370538">3.281</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Module_Long_Description_in_basic_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="3554963075">3.554</td>
+              <td class="duration" data-value="3554963075">3.554</td>
+              <td class="duration" data-value="3554963075">3.554</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Module_Short_Description_in_basic_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="3625703589">3.625</td>
+              <td class="duration" data-value="3625703589">3.625</td>
+              <td class="duration" data-value="3625703589">3.625</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_Module_Title_in_basic_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="3319712667">3.319</td>
+              <td class="duration" data-value="3319712667">3.319</td>
+              <td class="duration" data-value="3319712667">3.319</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Address_line_one()</td>
+              <td>1</td>
+              <td class="duration" data-value="3479594111">3.479</td>
+              <td class="duration" data-value="3479594111">3.479</td>
+              <td class="duration" data-value="3479594111">3.479</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Address_line_two()</td>
+              <td>1</td>
+              <td class="duration" data-value="3476998908">3.476</td>
+              <td class="duration" data-value="3476998908">3.476</td>
+              <td class="duration" data-value="3476998908">3.476</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Basic_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="2999878249">2.999</td>
+              <td class="duration" data-value="2999878249">2.999</td>
+              <td class="duration" data-value="2999878249">2.999</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Biography()</td>
+              <td>1</td>
+              <td class="duration" data-value="3432949690">3.432</td>
+              <td class="duration" data-value="3432949690">3.432</td>
+              <td class="duration" data-value="3432949690">3.432</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_City()</td>
+              <td>1</td>
+              <td class="duration" data-value="3416061651">3.416</td>
+              <td class="duration" data-value="3416061651">3.416</td>
+              <td class="duration" data-value="3416061651">3.416</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Contact_No()</td>
+              <td>1</td>
+              <td class="duration" data-value="3461673091">3.461</td>
+              <td class="duration" data-value="3461673091">3.461</td>
+              <td class="duration" data-value="3461673091">3.461</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Course_Code_and_Course_Name()</td>
+              <td>1</td>
+              <td class="duration" data-value="3929897159">3.929</td>
+              <td class="duration" data-value="3929897159">3.929</td>
+              <td class="duration" data-value="3929897159">3.929</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Course_Discussion()</td>
+              <td>1</td>
+              <td class="duration" data-value="3944632483">3.944</td>
+              <td class="duration" data-value="3944632483">3.944</td>
+              <td class="duration" data-value="3944632483">3.944</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Discussion_detail_and_description()</td>
+              <td>1</td>
+              <td class="duration" data-value="8904213734">8.904</td>
+              <td class="duration" data-value="8904213734">8.904</td>
+              <td class="duration" data-value="8904213734">8.904</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Email_Id_already_Existing()</td>
+              <td>1</td>
+              <td class="duration" data-value="3535563537">3.535</td>
+              <td class="duration" data-value="3535563537">3.535</td>
+              <td class="duration" data-value="3535563537">3.535</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Email_Mandatory()</td>
+              <td>1</td>
+              <td class="duration" data-value="3634322435">3.634</td>
+              <td class="duration" data-value="3634322435">3.634</td>
+              <td class="duration" data-value="3634322435">3.634</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_First_Name()</td>
+              <td>1</td>
+              <td class="duration" data-value="3528194924">3.528</td>
+              <td class="duration" data-value="3528194924">3.528</td>
+              <td class="duration" data-value="3528194924">3.528</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_First_name_in_Create_user()</td>
+              <td>1</td>
+              <td class="duration" data-value="3428454025">3.428</td>
+              <td class="duration" data-value="3428454025">3.428</td>
+              <td class="duration" data-value="3428454025">3.428</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Last_Name_Mandatory()</td>
+              <td>1</td>
+              <td class="duration" data-value="3355846152">3.355</td>
+              <td class="duration" data-value="3355846152">3.355</td>
+              <td class="duration" data-value="3355846152">3.355</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Last_name_in_Create_user()</td>
+              <td>1</td>
+              <td class="duration" data-value="3321512683">3.321</td>
+              <td class="duration" data-value="3321512683">3.321</td>
+              <td class="duration" data-value="3321512683">3.321</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Learner_id()</td>
+              <td>1</td>
+              <td class="duration" data-value="389272194">0.389</td>
+              <td class="duration" data-value="389272194">0.389</td>
+              <td class="duration" data-value="389272194">0.389</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Mobile_Number()</td>
+              <td>1</td>
+              <td class="duration" data-value="411523374">0.411</td>
+              <td class="duration" data-value="411523374">0.411</td>
+              <td class="duration" data-value="411523374">0.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_Pincode()</td>
+              <td>1</td>
+              <td class="duration" data-value="3447642021">3.447</td>
+              <td class="duration" data-value="3447642021">3.447</td>
+              <td class="duration" data-value="3447642021">3.447</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_State()</td>
+              <td>1</td>
+              <td class="duration" data-value="442378943">0.442</td>
+              <td class="duration" data-value="442378943">0.442</td>
+              <td class="duration" data-value="442378943">0.442</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_User_Advanced_Settings()</td>
+              <td>1</td>
+              <td class="duration" data-value="578572923">0.578</td>
+              <td class="duration" data-value="578572923">0.578</td>
+              <td class="duration" data-value="578572923">0.578</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_User_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="3475031485">3.475</td>
+              <td class="duration" data-value="3475031485">3.475</td>
+              <td class="duration" data-value="3475031485">3.475</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_User_Settings()</td>
+              <td>1</td>
+              <td class="duration" data-value="3628351678">3.628</td>
+              <td class="duration" data-value="3628351678">3.628</td>
+              <td class="duration" data-value="3628351678">3.628</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_User_expiration_Date_or_Number_of_Days()</td>
+              <td>1</td>
+              <td class="duration" data-value="5249155160">5.249</td>
+              <td class="duration" data-value="5249155160">5.249</td>
+              <td class="duration" data-value="5249155160">5.249</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Enter_the_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="232199779">0.232</td>
+              <td class="duration" data-value="232199779">0.232</td>
+              <td class="duration" data-value="232199779">0.232</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Logout_the_learner()</td>
+              <td>1</td>
+              <td class="duration" data-value="1555410892">1.555</td>
+              <td class="duration" data-value="1555410892">1.555</td>
+              <td class="duration" data-value="1555410892">1.555</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Response_will_be_get_back()</td>
+              <td>1</td>
+              <td class="duration" data-value="35439503">0.035</td>
+              <td class="duration" data-value="35439503">0.035</td>
+              <td class="duration" data-value="35439503">0.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_Allow_to_Change_Password()</td>
+              <td>1</td>
+              <td class="duration" data-value="3216036541">3.216</td>
+              <td class="duration" data-value="3216036541">3.216</td>
+              <td class="duration" data-value="3216036541">3.216</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_Allow_to_Edit_profile()</td>
+              <td>1</td>
+              <td class="duration" data-value="3205469675">3.205</td>
+              <td class="duration" data-value="3205469675">3.205</td>
+              <td class="duration" data-value="3205469675">3.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_Module_Thumbnail_and_upload()</td>
+              <td>1</td>
+              <td class="duration" data-value="11356262389">11.356</td>
+              <td class="duration" data-value="11356262389">11.356</td>
+              <td class="duration" data-value="11356262389">11.356</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_Skills_and_select_skill()</td>
+              <td>1</td>
+              <td class="duration" data-value="3234268789">3.234</td>
+              <td class="duration" data-value="3234268789">3.234</td>
+              <td class="duration" data-value="3234268789">3.234</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_publish_date_and_time()</td>
+              <td>1</td>
+              <td class="duration" data-value="4460412204">4.460</td>
+              <td class="duration" data-value="4460412204">4.460</td>
+              <td class="duration" data-value="4460412204">4.460</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Country_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="3245199386">3.245</td>
+              <td class="duration" data-value="3245199386">3.245</td>
+              <td class="duration" data-value="3245199386">3.245</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Country_India()</td>
+              <td>1</td>
+              <td class="duration" data-value="2999600504">2.999</td>
+              <td class="duration" data-value="2999600504">2.999</td>
+              <td class="duration" data-value="2999600504">2.999</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Date_of_Birth()</td>
+              <td>1</td>
+              <td class="duration" data-value="3343793541">3.343</td>
+              <td class="duration" data-value="3343793541">3.343</td>
+              <td class="duration" data-value="3343793541">3.343</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Language()</td>
+              <td>1</td>
+              <td class="duration" data-value="3275122797">3.275</td>
+              <td class="duration" data-value="3275122797">3.275</td>
+              <td class="duration" data-value="3275122797">3.275</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Role_click_on_select_role()</td>
+              <td>1</td>
+              <td class="duration" data-value="6217969342">6.217</td>
+              <td class="duration" data-value="6217969342">6.217</td>
+              <td class="duration" data-value="6217969342">6.217</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Select_Author()</td>
+              <td>1</td>
+              <td class="duration" data-value="9299498537">9.299</td>
+              <td class="duration" data-value="9299498537">9.299</td>
+              <td class="duration" data-value="9299498537">9.299</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Select_the_Send_Emails()</td>
+              <td>1</td>
+              <td class="duration" data-value="6208712823">6.208</td>
+              <td class="duration" data-value="6208712823">6.208</td>
+              <td class="duration" data-value="6208712823">6.208</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Switch_to_Course_window()</td>
+              <td>1</td>
+              <td class="duration" data-value="10336241919">10.336</td>
+              <td class="duration" data-value="10336241919">10.336</td>
+              <td class="duration" data-value="10336241919">10.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_User_Click_Start_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3143944208">3.143</td>
+              <td class="duration" data-value="3143944208">3.143</td>
+              <td class="duration" data-value="3143944208">3.143</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Verify_Added_Successfully_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="89894647">0.089</td>
+              <td class="duration" data-value="89894647">0.089</td>
+              <td class="duration" data-value="89894647">0.089</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Verify_the_Email_is_already_using_by_other_user_in_the_Application()</td>
+              <td>1</td>
+              <td class="duration" data-value="3075704921">3.075</td>
+              <td class="duration" data-value="3075704921">3.075</td>
+              <td class="duration" data-value="3075704921">3.075</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_Verify_the_User_Login()</td>
+              <td>1</td>
+              <td class="duration" data-value="2076789268">2.076</td>
+              <td class="duration" data-value="2076789268">2.076</td>
+              <td class="duration" data-value="2076789268">2.076</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_back_to_Discussion()</td>
+              <td>1</td>
+              <td class="duration" data-value="4984693967">4.984</td>
+              <td class="duration" data-value="4984693967">4.984</td>
+              <td class="duration" data-value="4984693967">4.984</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_Course_Authoring_Module()</td>
+              <td>1</td>
+              <td class="duration" data-value="1110690900">1.110</td>
+              <td class="duration" data-value="1110690900">1.110</td>
+              <td class="duration" data-value="1110690900">1.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_Create_post()</td>
+              <td>1</td>
+              <td class="duration" data-value="5017754755">5.017</td>
+              <td class="duration" data-value="5017754755">5.017</td>
+              <td class="duration" data-value="5017754755">5.017</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_Leadership_board()</td>
+              <td>1</td>
+              <td class="duration" data-value="3101005589">3.101</td>
+              <td class="duration" data-value="3101005589">3.101</td>
+              <td class="duration" data-value="3101005589">3.101</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_Pop_and_click_on_back_to_module()</td>
+              <td>1</td>
+              <td class="duration" data-value="4505261556">4.505</td>
+              <td class="duration" data-value="4505261556">4.505</td>
+              <td class="duration" data-value="4505261556">4.505</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_Save_and_Publish()</td>
+              <td>1</td>
+              <td class="duration" data-value="2554360407">2.554</td>
+              <td class="duration" data-value="2554360407">2.554</td>
+              <td class="duration" data-value="2554360407">2.554</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_save_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5521197652">5.521</td>
+              <td class="duration" data-value="5521197652">5.521</td>
+              <td class="duration" data-value="5521197652">5.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_Action_button_and_click_bulk_add()</td>
+              <td>1</td>
+              <td class="duration" data-value="3236770396">3.236</td>
+              <td class="duration" data-value="3236770396">3.236</td>
+              <td class="duration" data-value="3236770396">3.236</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_Course_Type()</td>
+              <td>1</td>
+              <td class="duration" data-value="6252746822">6.252</td>
+              <td class="duration" data-value="6252746822">6.252</td>
+              <td class="duration" data-value="6252746822">6.252</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_Create_Button_in_Module_Authoring()</td>
+              <td>1</td>
+              <td class="duration" data-value="3079978770">3.079</td>
+              <td class="duration" data-value="3079978770">3.079</td>
+              <td class="duration" data-value="3079978770">3.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_Users_Module()</td>
+              <td>1</td>
+              <td class="duration" data-value="4474331795">4.474</td>
+              <td class="duration" data-value="4474331795">4.474</td>
+              <td class="duration" data-value="4474331795">4.474</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_action_and_click_bulk_add()</td>
+              <td>1</td>
+              <td class="duration" data-value="3222821128">3.222</td>
+              <td class="duration" data-value="3222821128">3.222</td>
+              <td class="duration" data-value="3222821128">3.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_add_module()</td>
+              <td>1</td>
+              <td class="duration" data-value="4028758784">4.028</td>
+              <td class="duration" data-value="4028758784">4.028</td>
+              <td class="duration" data-value="4028758784">4.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_goal()</td>
+              <td>1</td>
+              <td class="duration" data-value="9558488154">9.558</td>
+              <td class="duration" data-value="9558488154">9.558</td>
+              <td class="duration" data-value="9558488154">9.558</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="6046869281">6.046</td>
+              <td class="duration" data-value="6046869281">6.046</td>
+              <td class="duration" data-value="6046869281">6.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_module()</td>
+              <td>1</td>
+              <td class="duration" data-value="3083282033">3.083</td>
+              <td class="duration" data-value="3083282033">3.083</td>
+              <td class="duration" data-value="3083282033">3.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_profile()</td>
+              <td>1</td>
+              <td class="duration" data-value="97403655">0.097</td>
+              <td class="duration" data-value="97403655">0.097</td>
+              <td class="duration" data-value="97403655">0.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_click_on_the_publish()</td>
+              <td>1</td>
+              <td class="duration" data-value="72344967">0.072</td>
+              <td class="duration" data-value="72344967">0.072</td>
+              <td class="duration" data-value="72344967">0.072</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_enter_the_Short_and_Long_description()</td>
+              <td>1</td>
+              <td class="duration" data-value="6692405386">6.692</td>
+              <td class="duration" data-value="6692405386">6.692</td>
+              <td class="duration" data-value="6692405386">6.692</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_enter_the_emailID_and_Password()</td>
+              <td>1</td>
+              <td class="duration" data-value="1172736473">1.172</td>
+              <td class="duration" data-value="1172736473">1.172</td>
+              <td class="duration" data-value="1172736473">1.172</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_enter_the_maximum_enrollement()</td>
+              <td>1</td>
+              <td class="duration" data-value="3341453253">3.341</td>
+              <td class="duration" data-value="3341453253">3.341</td>
+              <td class="duration" data-value="3341453253">3.341</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_launch_the_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="8672235391">8.672</td>
+              <td class="duration" data-value="8672235391">8.672</td>
+              <td class="duration" data-value="8672235391">8.672</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_select_the_Start_Date_and_End_date()</td>
+              <td>1</td>
+              <td class="duration" data-value="7043656189">7.043</td>
+              <td class="duration" data-value="7043656189">7.043</td>
+              <td class="duration" data-value="7043656189">7.043</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_select_the_activation_date()</td>
+              <td>1</td>
+              <td class="duration" data-value="3601308826">3.601</td>
+              <td class="duration" data-value="3601308826">3.601</td>
+              <td class="duration" data-value="3601308826">3.601</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_select_the_module_using_checkbox()</td>
+              <td>1</td>
+              <td class="duration" data-value="3094715996">3.094</td>
+              <td class="duration" data-value="3094715996">3.094</td>
+              <td class="duration" data-value="3094715996">3.094</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_select_the_role_and_select_role()</td>
+              <td>1</td>
+              <td class="duration" data-value="10552795522">10.552</td>
+              <td class="duration" data-value="10552795522">10.552</td>
+              <td class="duration" data-value="10552795522">10.552</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_verify_the_Announcement()</td>
+              <td>1</td>
+              <td class="duration" data-value="1931043522">1.931</td>
+              <td class="duration" data-value="1931043522">1.931</td>
+              <td class="duration" data-value="1931043522">1.931</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_verify_the_Author_Name()</td>
+              <td>1</td>
+              <td class="duration" data-value="3082632185">3.082</td>
+              <td class="duration" data-value="3082632185">3.082</td>
+              <td class="duration" data-value="3082632185">3.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_verify_the_User_role_and_Status()</td>
+              <td>1</td>
+              <td class="duration" data-value="6246925591">6.246</td>
+              <td class="duration" data-value="6246925591">6.246</td>
+              <td class="duration" data-value="6246925591">6.246</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_verify_the_course_authoring()</td>
+              <td>1</td>
+              <td class="duration" data-value="9466578143">9.466</td>
+              <td class="duration" data-value="9466578143">9.466</td>
+              <td class="duration" data-value="9466578143">9.466</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Courseplaysteps.user_verify_the_username_is_displayed_in_header()</td>
+              <td>1</td>
+              <td class="duration" data-value="192709384">0.192</td>
+              <td class="duration" data-value="192709384">0.192</td>
+              <td class="duration" data-value="192709384">0.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afterHook(Scenario)</td>
+              <td>7</td>
+              <td class="duration" data-value="152895">0.000</td>
+              <td class="duration" data-value="152895">0.000</td>
+              <td class="duration" data-value="1070271">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforeHook()</td>
+              <td>7</td>
+              <td class="duration" data-value="58864">0.000</td>
+              <td class="duration" data-value="58864">0.000</td>
+              <td class="duration" data-value="412053">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>118</td>
+            <td>130</td>
+            <td class="duration">3.438</td>
+            <td class="duration">11.356</td>
+            <td class="duration">7:26.991</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

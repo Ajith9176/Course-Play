@@ -1,0 +1,5 @@
+SCORM stands for Sharable Content Object Reference Model.Sharable Content Object indicates that SCORM is all about creating units of online training material that can be shared across systems. 
+SCORM defines how to create “sharable content objects” or “SCOs” that can be reused in different systems and contexts.“Reference Model” reflects the fact that SCORM isn’t actually a standard.
+ ADL didn’t write SCORM from the ground up.
+ Instead, they noticed that the industry already had many standards that solved part of the problem. 
+SCORM simply references these existing standards and tells developers how to properly use them together.

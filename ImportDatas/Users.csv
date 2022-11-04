@@ -1,0 +1,2 @@
+User Code,First Name *,Last Name *,Email *,Contact No,Role (Learner) *,Country Code,Mobile No,Designation,Location,Batch,Department,Level,Division,Other,Allow user to edit their profile (Yes),Allow user to change their password (Yes),Allow user to force change their password (No),Suspend User (No),Send Emails (No),Joining Date(mm-dd-yyyy)
+Learner001,Vijayakumar,Shanmugam,rakesh.m@trackdfect.com,9962853236,Learner,91,9962853236,,,,,,,,Yes,Yes,No,No,Yes,7/6/2019

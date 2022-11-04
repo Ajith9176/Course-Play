@@ -1,0 +1,130 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 75000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHook()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User verify the Login Name",
+        "description": "",
+        "id": "end-to-end-scenario-for-courseplay-application;user-verify-the-login-name",
+        "after": [
+          {
+            "result": {
+              "duration": 1730600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 136507784100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User launch the application",
+            "match": {
+              "location": "Courseplaysteps.user_launch_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Url"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHook()"
+            }
+          }
+        ],
+        "line": 1848,
+        "name": "user logout the application",
+        "description": "",
+        "id": "end-to-end-scenario-for-courseplay-application;user-logout-the-application",
+        "after": [
+          {
+            "result": {
+              "duration": 213407800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30134472500,
+              "error_message": "java.lang.RuntimeException\r\n\tat org.Courseplay.baseclass.BaseClass.elementClick(BaseClass.java:227)\r\n\tat org.Courseplay.StepDefinition.Courseplaysteps.user_click_on_the_profile(Courseplaysteps.java:12688)\r\n\tat ✽.Given User click on the profile(CoursePlay.feature:1849)\r\n",
+              "status": "failed"
+            },
+            "line": 1849,
+            "name": "User click on the profile",
+            "match": {
+              "location": "Courseplaysteps.user_click_on_the_profile()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 1850,
+            "name": "User Click on Logout button",
+            "match": {
+              "location": "Courseplaysteps.user_Click_on_Logout_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1847,
+            "name": "@TC-002_Signout"
+          }
+        ]
+      }
+    ],
+    "name": "End to End scenario For CoursePlay Application",
+    "description": "",
+    "id": "end-to-end-scenario-for-courseplay-application",
+    "keyword": "Feature",
+    "uri": "CoursePlay.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CoursePlay"
+      }
+    ]
+  }
+]

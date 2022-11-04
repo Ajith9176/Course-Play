@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="166.857491">
+<testcase classname="End to End scenario For CoursePlay Application" name="User verify the Login Name" time="136.50959">
+<system-out><![CDATA[Given User launch the application...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End to End scenario For CoursePlay Application" name="user logout the application" time="30.347901">
+<failure message="java.lang.RuntimeException&#13;&#10;&#9;at org.Courseplay.baseclass.BaseClass.elementClick(BaseClass.java:227)&#13;&#10;&#9;at org.Courseplay.StepDefinition.Courseplaysteps.user_click_on_the_profile(Courseplaysteps.java:12688)&#13;&#10;&#9;at ✽.Given User click on the profile(CoursePlay.feature:1849)&#13;&#10;"><![CDATA[Given User click on the profile.............................................failed
+And User Click on Logout button.............................................skipped
+
+StackTrace:
+java.lang.RuntimeException
+	at org.Courseplay.baseclass.BaseClass.elementClick(BaseClass.java:227)
+	at org.Courseplay.StepDefinition.Courseplaysteps.user_click_on_the_profile(Courseplaysteps.java:12688)
+	at ✽.Given User click on the profile(CoursePlay.feature:1849)
+]]></failure>
+</testcase>
+</testsuite>
